@@ -54,12 +54,20 @@ class DA {
             }
         }
     }
-    public void getValue(int val){
-        if (val < 0 || val >= size) {
+    public void getValue(int pos){
+        if (pos < 0 || pos >= size) {
             System.out.println("Invalid position.");
             return ;
         }
-        System.out.println(arr[val]);
+        System.out.println(arr[pos]);
+    }
+    public void updateValue(int pos,int value){
+        if (pos< 0 || pos >= size) {
+            System.out.println("Invalid position.");
+            return ;
+        }
+        arr[pos] = value;
+        System.out.println("Value Succesfully updated");
     }
 }
 
@@ -76,7 +84,8 @@ public class DynamicArray {
             System.out.println("4. Delete at specified position");
             System.out.println("5.Search Value");
             System.out.println("6.Get value");
-            System.out.println("7. Exit");
+            System.out.println("7.Update Value");
+            System.out.println("8. Exit");
             System.out.print("Enter your choice: ");
             int choice = sc.nextInt();
             switch (choice) {
@@ -107,10 +116,17 @@ public class DynamicArray {
                     break;
                 case 6:
                     System.out.println("Enter the index value(index starts from '0')");
-                    val = sc.nextInt();
-                    d.getValue(val);
+                    pos = sc.nextInt();
+                    d.getValue(pos);
                     break;
                 case 7:
+                    System.out.println("Enter the index value top be updated ");
+                    pos = sc.nextInt();
+                    System.out.println("Enter the value");
+                    val = sc.nextInt();
+                    d.updateValue(pos,val);
+                    break;
+                case 8:
                     System.exit(0);
                     break;
                 default:
