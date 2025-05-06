@@ -11,6 +11,7 @@ This project is a custom implementation of a **dynamic array** similar to Java's
 - ✅ Delete elements from a given position
 - ✅ Search for a value in the array
 - ✅ Get a value in the array
+- ✅ Update a value in the array
 - ✅ Display all elements
 - ✅ Interactive menu-driven interface via console
 
