@@ -69,6 +69,10 @@ class DA {
         arr[pos] = value;
         System.out.println("Value Succesfully updated");
     }
+    public void sort(){
+        Arrays.sort(arr, 0, size);
+        System.out.println("Array sorted successfully.");
+    }
 }
 
 public class DynamicArray {
@@ -85,7 +89,8 @@ public class DynamicArray {
             System.out.println("5.Search Value");
             System.out.println("6.Get value");
             System.out.println("7.Update Value");
-            System.out.println("8. Exit");
+            System.out.println("8.Sort array(after adding all the values sort it)");
+            System.out.println("9. Exit");
             System.out.print("Enter your choice: ");
             int choice = sc.nextInt();
             switch (choice) {
@@ -127,6 +132,10 @@ public class DynamicArray {
                     d.updateValue(pos,val);
                     break;
                 case 8:
+                    d.sort();
+                    break;
+
+                case 9:
                     System.exit(0);
                     break;
                 default:
