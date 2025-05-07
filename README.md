@@ -13,6 +13,7 @@ This project is a custom implementation of a **dynamic array** similar to Java's
 - ✅ Get a value in the array
 - ✅ Update a value in the array
 - ✅ Display all elements
+- ✅ Sort the Elements
 - ✅ Interactive menu-driven interface via console
 
 ---
